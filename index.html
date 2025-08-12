@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="with=device-with, initial-scale:1.0">
+<title>My Journal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="full-screen-section" id="entry-section">
+        <div class="section-content">
+            <h1>What's on your mind?</h1>
+
+            <div class="enty-form">
+                <input type="text" id="entry-title" placeholder="Entry title...">
+                <textarea id="entry-content" placeholder="What happened today?" rows="5"></textarea>
+                <button onclick="addEntry()">Save Entry</button>
+            </div>
+            
+            <button class="show-entries-btn" onclick="ScrolltoEntries()">Show All Entries</button>
+            
+        </div>
+    </section>
+
+    <section class="full-screen-section" id="entries-section">
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
