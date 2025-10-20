@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="with=device-with, initial-scale:1.0">
+<meta name="viewport" content="with=device-width, initial-scale:1.0">
 <title>My Journal</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="full-screen-section" id="entry-section">
         <div class="section-content">
-            <h1>What's on your mind?</h1>
+            <h1>Journal</h1>
 
-            <div class="enty-form">
-                <input type="text" id="entry-title" placeholder="Entry title...">
-                <textarea id="entry-content" placeholder="What happened today?" rows="5"></textarea>
-                <button onclick="addEntry()">Save Entry</button>
+            <div class="entry-form">
+                <input class="formField" type="text" id="entry-title" placeholder="Entry title...">
+                <textarea class="formField" id="entry-content" placeholder="What happened today?" rows="10"></textarea>
+                <button class="default-button" id="submitButton" onclick="addEntry()">Save Entry</button>
             </div>
             
-            <button class="show-entries-btn" >Show All Entries</button>
+            <button id="scrollDown" class="default-button" >Show All Entries</button>
             
         </div>
     </section>
 
     <section class="full-screen-section" id="entries-section">
-
+        <button id="scrollUp" class="default-button">New Entry</button>
+        <entry>
+            <h3>This is how entries will look like</h3>
+            <p>here goes your journal text</p>
+        </entry>
     </section>
     
     <script src="script.js"></script>
